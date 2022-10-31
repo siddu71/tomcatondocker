@@ -37,3 +37,14 @@ https://<instanceip>:8080
 ```
 ![image](https://user-images.githubusercontent.com/52039971/198987719-ba0e3855-0fb5-4b70-a8e9-c37765e44db8.png)
 
+Access the tomcat container files using 
+```
+docker exec -it <container id> bash
+```
+
+Set username and passsword : copy below line and paste in /usr/local/tomcat/conf/tomcat-user.xml
+```
+<user username="sidd71" password="sidd71" roles="admin-gui,manager-gui,manager-script"/>
+```
+
+
